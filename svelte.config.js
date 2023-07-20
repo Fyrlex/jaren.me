@@ -16,7 +16,10 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			base: process.env.RELEASE_MODE === 'RELEASE' ? process.env.BASE_PATH : '',
+		}
 	}
 };
 
