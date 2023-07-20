@@ -1,7 +1,6 @@
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
-			RELEASE_MODE: string;
 			BASE_PATH: string;
 			ORIGIN: string;
 		}
