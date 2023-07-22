@@ -7,6 +7,7 @@
 	// import MUSIC_4 from "$lib/assets/MUSIC_4.jpg";
 	// import MUSIC_5 from "$lib/assets/MUSIC_5.jpg";
 	import MUSIC_6 from "$lib/assets/MUSIC_6.jpg";
+	import Hobbies from "../../components/hobbies.svelte";
 
 	const astroImages: {
 		src: string;
@@ -52,78 +53,22 @@
 </script>
 
 <div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
-	<h1 class="text-8xl p-8">my hobbies</h1>
-	<div class="m-10">
-		<h2 class="text-6xl text-cyan-500 m-4">astronomy</h2>
+	<h1 class="text-6xl lg:text-8xl text-center p-8">my hobbies</h1>
+	<div class="m-5">
+		<h2 class="text-4xl lg:text-6xl text-cyan-500 m-4">astronomy</h2>
 		<p class="text-2xl w-1/2 max-w-fit mx-auto">
 			I am currently a member of the Northern Virginia Astronomy Club. I've only
 			gone to two events but they were super cool.
 		</p>
-		{#each astroImages as { date, description, src, title }, i}
-			<div
-				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border border-stone-600 shadow-lg hover:scale-[1.10] duration-700"
-			>
-				{#if i % 2 === 0}
-					<img
-						{src}
-						alt={title}
-						class="rounded-l-md border-r border-stone-600 w-2/3"
-					/>
-					<div class="relative flex flex-col mx-auto">
-						<p class="text-2xl p-2 text-cyan-500">{title}</p>
-						<p class="w-3/4 mx-auto">{description}</p>
-						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-					</div>
-				{:else}
-					<div class="relative flex flex-col mx-auto">
-						<p class="text-2xl p-2 text-cyan-500">{title}</p>
-						<p class="w-3/4 mx-auto">{description}</p>
-						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-					</div>
-					<img
-						{src}
-						alt={title}
-						class="rounded-r-md border-l border-stone-600 w-2/3"
-					/>
-				{/if}
-			</div>
-		{/each}
+		<Hobbies data={astroImages} />
 	</div>
-	<div class="m-10">
+	<div class="m-5">
 		<h2 class="text-6xl text-cyan-500 m-4">music</h2>
 		<p class="text-2xl w-1/2 max-w-fit mx-auto">
 			Bassist for rock band <a href="https://clishae.us" class="text-cyan-500"
 				>Clishae</a
 			>
 		</p>
-		{#each musicImages as { date, description, src, title }, i}
-			<div
-				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border border-stone-600 shadow-md scale-[0.95] hover:scale-[1.05] duration-700"
-			>
-				{#if i % 2 === 0}
-					<img
-						{src}
-						alt={title}
-						class="rounded-l-md border-r border-stone-600 w-2/3"
-					/>
-					<div class="relative flex flex-col mx-auto">
-						<p class="text-2xl p-2 text-cyan-500">{title}</p>
-						<p class="w-3/4 mx-auto">{description}</p>
-						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-					</div>
-				{:else}
-					<div class="relative flex flex-col mx-auto">
-						<p class="text-2xl p-2 text-cyan-500">{title}</p>
-						<p class="w-3/4 mx-auto">{description}</p>
-						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-					</div>
-					<img
-						{src}
-						alt={title}
-						class="rounded-r-md border-l border-stone-600 w-2/3"
-					/>
-				{/if}
-			</div>
-		{/each}
+		<Hobbies data={musicImages} />
 	</div>
 </div>
