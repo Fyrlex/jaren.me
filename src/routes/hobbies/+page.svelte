@@ -61,13 +61,13 @@
 		</p>
 		{#each astroImages as { date, description, src, title }, i}
 			<div
-				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border-2 border-stone-700 shadow-md hover:scale-[1.10] duration-700"
+				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border border-stone-600 shadow-lg hover:scale-[1.10] duration-700"
 			>
 				{#if i % 2 === 0}
 					<img
 						{src}
 						alt={title}
-						class="rounded-l-md border-r-2 border-stone-700 w-2/3"
+						class="rounded-l-md border-r border-stone-600 w-2/3"
 					/>
 					<div class="relative flex flex-col mx-auto">
 						<p class="text-2xl p-2 text-cyan-500">{title}</p>
@@ -83,7 +83,7 @@
 					<img
 						{src}
 						alt={title}
-						class="rounded-r-md border-l-2 border-stone-700 w-2/3"
+						class="rounded-r-md border-l border-stone-600 w-2/3"
 					/>
 				{/if}
 			</div>
@@ -98,13 +98,13 @@
 		</p>
 		{#each musicImages as { date, description, src, title }, i}
 			<div
-				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border-2 border-stone-700 shadow-md scale-[0.95] hover:scale-[1.05] duration-700"
+				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border border-stone-600 shadow-md scale-[0.95] hover:scale-[1.05] duration-700"
 			>
 				{#if i % 2 === 0}
 					<img
 						{src}
 						alt={title}
-						class="rounded-l-md border-r-2 border-stone-700 w-2/3"
+						class="rounded-l-md border-r border-stone-600 w-2/3"
 					/>
 					<div class="relative flex flex-col mx-auto">
 						<p class="text-2xl p-2 text-cyan-500">{title}</p>
@@ -120,7 +120,7 @@
 					<img
 						{src}
 						alt={title}
-						class="rounded-r-md border-l-2 border-stone-700 w-2/3"
+						class="rounded-r-md border-l border-stone-600 w-2/3"
 					/>
 				{/if}
 			</div>
