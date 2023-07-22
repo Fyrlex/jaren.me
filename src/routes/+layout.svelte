@@ -1,16 +1,20 @@
 <script lang="ts">
 	import { base } from "$app/paths";
+	import { page } from "$app/stores";
 	import "../app.css";
+	import Transition from "../components/transition.svelte";
 
 	const pages: { name: string; url: string }[] = [
 		{ name: "home", url: "" },
 		{ name: "hobbies", url: "hobbies" },
 		{ name: "programming", url: "programming" },
 	];
+
+	export let data;
 </script>
 
 <nav
-	class="flex space-x-6 bg-stone-900 text-gray-300 font-extralight text-center text-2xl justify-center items-center h-20"
+	class="flex space-x-6 bg-stone-900 font-extralight text-center text-2xl justify-center items-center h-20"
 >
 	{#each pages as { name, url }, i}
 		<a
@@ -18,4 +22,8 @@
 			href="{base}/{url}">{name}</a
 		>{/each}
 </nav>
-<slot />
+<Transition {data}>
+	<slot />
+</Transition>
+
+<!-- <footer class="flex h-1/6 bg-black">test</footer> -->

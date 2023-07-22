@@ -1,6 +1,12 @@
 <script lang="ts">
 	import ASTRO_MOON from "$lib/assets/ASTRO_MOON.jpg";
 	import ASTRO_TRIFFID from "$lib/assets/ASTRO_TRIFFID.jpg";
+	import MUSIC_1 from "$lib/assets/MUSIC_1.jpg";
+	// import MUSIC_2 from "$lib/assets/MUSIC_2.jpg";
+	// import MUSIC_3 from "$lib/assets/MUSIC_3.jpg";
+	// import MUSIC_4 from "$lib/assets/MUSIC_4.jpg";
+	// import MUSIC_5 from "$lib/assets/MUSIC_5.jpg";
+	import MUSIC_6 from "$lib/assets/MUSIC_6.jpg";
 
 	const astroImages: {
 		src: string;
@@ -23,41 +29,101 @@
 			date: "July 10, 2023",
 		},
 	];
+
+	const musicImages: {
+		src: string;
+		title: string;
+		description: string;
+		date: string;
+	}[] = [
+		{
+			title: "Richmond Music Hall",
+			description: "",
+			src: MUSIC_1,
+			date: "July 14, 2023",
+		},
+		{
+			title: "Great Falls",
+			description: "",
+			src: MUSIC_6,
+			date: "May 17, 2022",
+		},
+	];
 </script>
 
-<div class="h-screen bg-stone-900 text-center text-gray-300">
-	<h1 class="text-8xl font-semibold p-8">my hobbies</h1>
-	<h2 class="text-6xl text-cyan-500 m-4">astronomy</h2>
-	<p class="text-2xl w-1/2 max-w-fit mx-auto">
-		I am currently a member of the Northern Virginia Astronomy Club. I've only
-		gone to two events
-	</p>
-	{#each astroImages as { date, description, src, title }, i}
-		<div
-			class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border-2 border-stone-700 shadow-md hover:scale-[1.10] duration-700"
-		>
-			{#if i % 2 === 0}
-				<img {src} alt={title} class="rounded-l-md w-2/3" />
-				<div class="relative flex flex-col mx-auto">
-					<p class="text-2xl p-2 text-cyan-500">{title}</p>
-					<p class="w-3/4 mx-auto">{description}</p>
-					<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-				</div>
-			{:else}
-				<div class="relative flex flex-col mx-auto">
-					<p class="text-2xl p-2 text-cyan-500">{title}</p>
-					<p class="w-3/4 mx-auto">{description}</p>
-					<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
-				</div>
-				<img {src} alt={title} class="rounded-l-md w-2/3" />
-			{/if}
-		</div>
-	{/each}
-
-	<h2 class="text-6xl p-8">A summary</h2>
-	<p class="text-2xl w-1/2 max-w-fit mx-auto">
-		Performing exciting shows with my band, lifting heavy weights in the gym,
-		photographing the night sky, doing the daily chess.com puzzle (and keeping
-		up with hygiene!) are all activities I enjoy.
-	</p>
+<div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
+	<h1 class="text-8xl p-8">my hobbies</h1>
+	<div class="m-10">
+		<h2 class="text-6xl text-cyan-500 m-4">astronomy</h2>
+		<p class="text-2xl w-1/2 max-w-fit mx-auto">
+			I am currently a member of the Northern Virginia Astronomy Club. I've only
+			gone to two events but they were super cool.
+		</p>
+		{#each astroImages as { date, description, src, title }, i}
+			<div
+				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border-2 border-stone-700 shadow-md hover:scale-[1.10] duration-700"
+			>
+				{#if i % 2 === 0}
+					<img
+						{src}
+						alt={title}
+						class="rounded-l-md border-r-2 border-stone-700 w-2/3"
+					/>
+					<div class="relative flex flex-col mx-auto">
+						<p class="text-2xl p-2 text-cyan-500">{title}</p>
+						<p class="w-3/4 mx-auto">{description}</p>
+						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
+					</div>
+				{:else}
+					<div class="relative flex flex-col mx-auto">
+						<p class="text-2xl p-2 text-cyan-500">{title}</p>
+						<p class="w-3/4 mx-auto">{description}</p>
+						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
+					</div>
+					<img
+						{src}
+						alt={title}
+						class="rounded-r-md border-l-2 border-stone-700 w-2/3"
+					/>
+				{/if}
+			</div>
+		{/each}
+	</div>
+	<div class="m-10">
+		<h2 class="text-6xl text-cyan-500 m-4">music</h2>
+		<p class="text-2xl w-1/2 max-w-fit mx-auto">
+			Bassist for rock band <a href="https://clishae.us" class="text-cyan-500"
+				>Clishae</a
+			>
+		</p>
+		{#each musicImages as { date, description, src, title }, i}
+			<div
+				class="flex w-2/5 mx-auto bg-stone-800 rounded-md m-5 border-2 border-stone-700 shadow-md scale-[0.95] hover:scale-[1.05] duration-700"
+			>
+				{#if i % 2 === 0}
+					<img
+						{src}
+						alt={title}
+						class="rounded-l-md border-r-2 border-stone-700 w-2/3"
+					/>
+					<div class="relative flex flex-col mx-auto">
+						<p class="text-2xl p-2 text-cyan-500">{title}</p>
+						<p class="w-3/4 mx-auto">{description}</p>
+						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
+					</div>
+				{:else}
+					<div class="relative flex flex-col mx-auto">
+						<p class="text-2xl p-2 text-cyan-500">{title}</p>
+						<p class="w-3/4 mx-auto">{description}</p>
+						<p class="text-2xl absolute inset-x-0 bottom-0 p-2">{date}</p>
+					</div>
+					<img
+						{src}
+						alt={title}
+						class="rounded-r-md border-l-2 border-stone-700 w-2/3"
+					/>
+				{/if}
+			</div>
+		{/each}
+	</div>
 </div>
