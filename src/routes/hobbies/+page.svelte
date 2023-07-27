@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-	<title>Hobbies</title>
+	<title>Jaren.me | Hobbies</title>
 			<meta charSet='utf-8' />
 			<meta
 				name='viewport'

@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Home</title>
+	<title>Jaren.me | Home</title>
 			<meta charSet='utf-8' />
 			<meta
 				name='viewport'
