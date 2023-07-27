@@ -52,6 +52,49 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Hobbies</title>
+			<meta charSet='utf-8' />
+			<meta
+				name='viewport'
+				content='width=device-width, initial-scale=1'
+			/>
+			<meta
+				name='description'
+				content='Hi, I’m Jaren Goldberg. Check out my website to see what I do!'
+			/>
+			<link
+				rel='shortcut icon'
+				href='https://cdn.discordapp.com/avatars/292821168833036288/6e131f90d887abb0b97b1d2c0ec659d2.png?size=4096'
+				type='image/png'
+			/>
+			<meta
+				property='og:title'
+				content='Hobbies'
+			/>
+			<meta
+				property='og:description'
+				content='Hi, I’m Jaren Goldberg. Check out my website to see what I do!'
+			/>
+			<meta
+				property='og:type'
+				content='website'
+			/>
+			<meta
+				property='og:url'
+				content='https://jaren.me/hobbies'
+			/>
+			<meta
+				property='og:image'
+				content='https://cdn.discordapp.com/avatars/292821168833036288/6e131f90d887abb0b97b1d2c0ec659d2.png?size=4096'
+			/>
+			<meta
+				content='#06B6D4'
+				data-react-helmet='true'
+				name='theme-color'
+			/>
+</svelte:head>
+
 <div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
 	<h1 class="text-6xl lg:text-8xl text-center p-8">my hobbies</h1>
 	<div class="m-5">
