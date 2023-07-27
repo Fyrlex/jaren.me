@@ -1,6 +1,6 @@
 <div class="h-screen bg-stone-900 text-gray-300 font-extralight">
-	<div class="">
-		<h1 class="text-8xl p-8">programming experience</h1>
+	<div class="flex flex-col items-center justify-center">
+		<h1 class="text-8xl p-8 text-center">programming experience</h1>
 		<img
 			class="m-5"
 			alt="Skill Icons"
