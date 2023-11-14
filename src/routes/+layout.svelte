@@ -5,7 +5,8 @@
 
 	const pages: { name: string; url: string }[] = [
 		{ name: "home", url: "" },
-		{ name: "hobbies", url: "hobbies" },
+		{ name: "astronomy", url: "astronomy" },
+		{ name: "music", url: "music" },
 		{ name: "programming", url: "programming" },
 	];
 
