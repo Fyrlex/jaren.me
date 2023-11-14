@@ -37,14 +37,18 @@
 </svelte:head>
 
 <div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
-	<h1 class="text-6xl lg:text-8xl text-center p-8">music experience</h1>
-	<div class="m-5">
-		<h2 class="text-6xl text-cyan-500 m-4">Electric Bassist</h2>
-		<p class="text-2xl w-1/2 max-w-fit mx-auto">
-			Member of rock band <a href="https://clishae.us" class="text-cyan-500"
-				>Clishae</a
-			>
-		</p>
+	<h1 class="text-5xl lg:text-8xl text-center lg:p-8">music experience</h1>
+	<div class="m-10">
+		<div class="m-5">
+			<h2 class="text-3xl lg:text-6xl text-cyan-500 m-2 mx-auto">
+				Electric Bassist
+			</h2>
+			<p class="text-xl lg:text-2xl w-[70vw] max-w-fit mb-4 mx-auto">
+				Member of rock band <a href="https://clishae.us" class="text-cyan-500"
+					>Clishae</a
+				>
+			</p>
+		</div>
 		<Hobbies data={musicImages} />
 	</div>
 </div>

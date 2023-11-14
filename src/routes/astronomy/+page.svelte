@@ -22,10 +22,9 @@
 		},
 		{
 			title: "Triffid Nebula",
-			description:
-				"Celestron Omni 150 XLT, ZWO ASI 183MC, ~1.5 hours @ 30s sub-exposure.",
+			description: "A diffuse, reflection and emission nebula.",
 			src: ASTRO_TRIFFID,
-			date: "Sky Meadows State Park - July 10, 2023",
+			date: "Delaplane, VA - July 10, 2023",
 		},
 		{
 			title: "Waxing Gibbous",
@@ -47,16 +46,20 @@
 </svelte:head>
 
 <div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
-	<h1 class="text-6xl lg:text-8xl text-center p-8">astronomy experience</h1>
-	<div class="m-5">
-		<h2 class="text-4xl lg:text-6xl text-cyan-500 m-4">Astrophotography</h2>
-		<p class="text-2xl w-1/2 my-5 max-w-fit mx-auto">
-			Member of the Northern Virginia Astronomy Club and Astronomy Club of
-			Virginia Tech.
-		</p>
-		<p class="text-cyan-500 text-2xl">Personal Equipment</p>
-		<p class="text-xl">Celestron Omni XLT 150</p>
-		<p class="text-xl">ZWO ASI 183MC</p>
+	<h1 class="text-5xl lg:text-8xl text-center lg:p-8">astronomy experience</h1>
+	<div class="m-10">
+		<div class="m-5">
+			<h2 class="text-3xl lg:text-6xl text-cyan-500 m-2 mx-auto">
+				Astrophotography
+			</h2>
+			<p class="text-xl lg:text-2xl w-[70vw] max-w-fit mb-4 mx-auto">
+				Member of the Northern Virginia Astronomy Club and Astronomy Club of
+				Virginia Tech.
+			</p>
+			<p class="text-cyan-500 text-2xl lg:text-3xl">Personal Equipment</p>
+			<p class="text-xl">Celestron Omni XLT 150</p>
+			<p class="text-xl">ZWO ASI 183MC</p>
+		</div>
 		<Hobbies data={astroImages} />
 	</div>
 </div>
