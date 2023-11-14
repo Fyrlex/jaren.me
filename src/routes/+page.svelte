@@ -7,8 +7,12 @@
 </svelte:head>
 
 <div class="bg-stone-900 text-center text-gray-300">
-	<h1 class="text-8xl font-semibold p-10">Hey!</h1>
-	<p class="text-2xl w-1/3 max-w-fit mx-auto">
+	<h1
+		class="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl 2xl:text-8xl font-semibold p-10"
+	>
+		Hey!
+	</h1>
+	<p class="text-2xl w-[90vw] sm:w-1/2 max-w-fit mx-auto">
 		My name is Jaren Goldberg. Currently I am a freshman at Virginia Tech and
 		plan to major in Computer Science. I enjoy many activies including sports
 		and the gym, astronomy, playing music with my band, and being outside in
