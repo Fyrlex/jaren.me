@@ -14,7 +14,7 @@
 />
 <link
 	rel="shortcut icon"
-	href="https://cdn.discordapp.com/avatars/292821168833036288/6e131f90d887abb0b97b1d2c0ec659d2.png?size=4096"
+	href="https://cdn.discordapp.com/avatars/292821168833036288/3284fe8baadfec0fa38834643ff8a8f5.png"
 	type="image/png"
 />
 <meta property="og:title" content={data.title} />
@@ -26,6 +26,6 @@
 <meta property="og:url" content="https://jaren.me/{data.url}" />
 <meta
 	property="og:image"
-	content="https://cdn.discordapp.com/avatars/292821168833036288/6e131f90d887abb0b97b1d2c0ec659d2.png?size=4096"
+	content="https://cdn.discordapp.com/avatars/292821168833036288/3284fe8baadfec0fa38834643ff8a8f5.png"
 />
 <meta content="#06B6D4" data-react-helmet="true" name="theme-color" />

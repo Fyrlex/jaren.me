@@ -4,7 +4,7 @@
 	import ASTRO_MOON from "$lib/assets/ASTRO_MOON.jpg";
 	import ASTRO_TRIFFID from "$lib/assets/ASTRO_TRIFFID.jpg";
 	import ASTRO_TRIANGULUM from "$lib/assets/ASTRO_TRIANGULUM.jpg";
-	import ASTRO_PINWHEEL from "$lib/assets/ASTRO_PINWHEEL.jpg";
+	import ASTRO_ORION from "$lib/assets/ASTRO_ORION.jpg";
 	import Hobbies from "../../components/hobbies.svelte";
 
 	const astroImages: {
@@ -13,6 +13,12 @@
 		description: string;
 		date: string;
 	}[] = [
+		{
+			title: "Orion Nebula",
+			description: "One of the brightest and largest nebulae.",
+			src: ASTRO_ORION,
+			date: "Delaplane, VA - December 20, 2023",
+		},
 		{
 			title: "Triangulum Galaxy",
 			description:
@@ -31,12 +37,6 @@
 			description: "Earth's moon in a waxing gibbous phase.",
 			src: ASTRO_MOON,
 			date: "Rockville, MD - May 30, 2023",
-		},
-		{
-			title: "Pinwheel Galaxy",
-			description: "A spiral galaxy with a recent supernova SN 2023ixf.",
-			src: ASTRO_PINWHEEL,
-			date: "Fairfax, VA - May 25, 2023",
 		},
 	];
 </script>
