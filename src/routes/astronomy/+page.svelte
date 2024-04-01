@@ -5,6 +5,8 @@
 	import ASTRO_TRIFFID from "$lib/assets/ASTRO_TRIFFID.jpg";
 	import ASTRO_TRIANGULUM from "$lib/assets/ASTRO_TRIANGULUM.jpg";
 	import ASTRO_ORION from "$lib/assets/ASTRO_ORION.jpg";
+	import ASTRO_12P from "$lib/assets/ASTRO_12P.jpg";
+
 	import Hobbies from "../../components/hobbies.svelte";
 
 	const astroImages: {
@@ -13,6 +15,12 @@
 		description: string;
 		date: string;
 	}[] = [
+		{
+			title: "12P/Pons-Brooks",
+			description: "A bright comet that is nearly visible to the naked eye.",
+			src: ASTRO_12P,
+			date: "Blacksburg, VA - March 31, 2024",
+		},
 		{
 			title: "Orion Nebula",
 			description: "One of the brightest and largest nebulae.",
