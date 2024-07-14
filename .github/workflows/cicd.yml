@@ -6,7 +6,8 @@ on:
     branches: [master]
 
 jobs:
-  build_site:
+  build_lint:
+    name: Build and Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,9 +20,12 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: build
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
         env:
           BASE_PATH: '/jaren.me'
         run: |
@@ -29,12 +33,13 @@ jobs:
           touch build/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: 'build/'
 
   deploy:
-    needs: build_site
+    name: Deploy
+    needs: build_lint
     runs-on: ubuntu-latest
 
     permissions:
@@ -48,4 +53,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
