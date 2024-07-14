@@ -1,37 +1,38 @@
 {
-	"name": "jaren.me",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/adapter-static": "^2.0.2",
-		"@sveltejs/kit": "^1.20.4",
-		"@tsconfig/svelte": "^5.0.0",
-		"@types/node": "^20.5.4",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"autoprefixer": "^10.4.14",
-		"eslint": "^8.47.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"postcss": "^8.4.26",
-		"svelte": "^4.2.0",
-		"svelte-check": "^3.4.6",
-		"svelte-preprocess": "^5.0.4",
-		"tailwindcss": "^3.3.3",
-		"tslib": "^2.4.1",
-		"typescript": "^5.2.2",
-		"vite": "^4.4.9"
-	},
-	"type": "module",
-	"dependencies": {
-		"dotenv": "^16.3.1"
-	}
+  "name": "jaren.me",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint --fix --format=pretty src",
+    "lint": "prettier --check . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint --format=pretty src",
+    "dev": "vite dev --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.2.2",
+    "@sveltejs/adapter-static": "^3.0.2",
+    "@sveltejs/kit": "^2.5.18",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-formatter-pretty": "^5.0.0",
+    "eslint-plugin-svelte": "^2.42.0",
+    "postcss": "^8.4.26",
+    "prettier": "^3.3.3",
+    "svelte": "^4.2.0",
+    "svelte-check": "^3.4.6",
+    "svelte-preprocess": "^5.0.4",
+    "tailwindcss": "^3.3.3",
+    "tslib": "^2.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.3"
+  },
+  "type": "module"
 }
