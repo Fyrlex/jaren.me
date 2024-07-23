@@ -9,7 +9,7 @@
 
 {#each data as { date, description, src, title }, i}
   <div
-    class="lg:flex lg:w-[70vw] mx-auto bg-stone-800 rounded-md border border-stone-600 shadow-lg scale-[0.95] hover:scale-[1] duration-700"
+    class="lg:flex lg:w-[50vw] mx-auto bg-stone-800 rounded-md border border-stone-600 shadow-lg scale-[0.95] hover:scale-[1] duration-700"
   >
     {#if i % 2 === 0}
       <img

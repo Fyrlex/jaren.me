@@ -12,10 +12,12 @@
 </svelte:head>
 
 <div class="bg-stone-900 text-center text-gray-300">
-  <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl 2xl:text-8xl font-semibold p-10">Hey!</h1>
+  <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl 2xl:text-8xl font-semibold p-10">
+    👋Hey, I&apos;m Jaren
+  </h1>
   <p class="text-2xl w-[90vw] sm:w-1/2 max-w-fit mx-auto">
-    Hi! I'm a rising sophomore at Virginia Tech studying Computer Science. I love to code, play music, and learn about
-    the universe through astronomy. Check out my GitHub to see what I'm working on!
+    A rising sophomore at Virginia Tech majoring in Computer Science. I love to code, play music with my band, and learn
+    about the universe through astronomy. Check out my GitHub to see what I'm working on!
   </p>
   <div class="flex flex-row items-center justify-center">
     <div class="m-5">
