@@ -1,6 +1,7 @@
 <script lang="ts">
   import Meta from '../../components/meta.svelte';
 
+  import ASTRO_EAGLE from '$lib/assets/ASTRO_EAGLE.jpg';
   import ASTRO_MOON from '$lib/assets/ASTRO_MOON.jpg';
   import ASTRO_TRIFFID from '$lib/assets/ASTRO_TRIFFID.jpg';
   import ASTRO_TRIANGULUM from '$lib/assets/ASTRO_TRIANGULUM.jpg';
@@ -15,6 +16,12 @@
     description: string;
     date: string;
   }[] = [
+    {
+      title: 'Eagle Nebula',
+      description: 'A young open cluster of stars in the constellation Serpens.',
+      src: ASTRO_EAGLE,
+      date: 'McHenry, MD - July 29, 2024',
+    },
     {
       title: '12P/Pons-Brooks',
       description: 'A bright comet that is nearly visible to the naked eye.',
