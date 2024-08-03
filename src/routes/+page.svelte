@@ -16,8 +16,8 @@
     👋Hey, I&apos;m Jaren
   </h1>
   <p class="text-2xl w-[90vw] sm:w-1/2 max-w-fit mx-auto">
-    A rising sophomore at Virginia Tech majoring in Computer Science. I love to code, play music with my band, and learn
-    about the universe through astronomy. Check out my GitHub to see what I'm working on!
+    I&apos;m a rising sophomore at Virginia Tech majoring in Computer Science. I love to code, play music with my band,
+    and learn about the universe through astronomy. Check out my GitHub to see what I'm working on!
   </p>
   <div class="flex flex-row items-center justify-center">
     <div class="m-5">
