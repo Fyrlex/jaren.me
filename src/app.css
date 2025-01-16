@@ -5,3 +5,7 @@
 body {
   background: #1c1917 !important;
 }
+
+html {
+  scrollbar-gutter: stable;
+}

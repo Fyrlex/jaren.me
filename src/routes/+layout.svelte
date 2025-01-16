@@ -1,7 +1,8 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import { fade } from 'svelte/transition';
   import '../app.css';
-  import Transition from '../components/transition.svelte';
+  import { onMount } from 'svelte';
 
   const pages: { name: string; url: string }[] = [
     { name: 'home', url: '' },
@@ -10,18 +11,29 @@
     { name: 'programming', url: 'programming' },
   ];
 
-  export let data;
+  let { children } = $props();
+
+  let loaded = $state(false);
+
+  onMount(() => {
+    loaded = true;
+  });
 </script>
 
 <nav
-  class="flex bg-stone-900 font-extralight text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl justify-center items-center h-20"
+  class="flex flex-row justify-around bg-stone-900 font-extralight text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl items-center my-5 mx-5"
 >
   {#each pages as { name, url }}
-    <a class="text-cyan-500 mx-auto hover:text-cyan-400 duration-300" href="{base}/{url}">{name}</a>
+    <a class="text-cyan-500 hover:text-cyan-400 duration-300" href="{base}/{url}">{name}</a>
   {/each}
 </nav>
-<Transition {data}>
+
+{#if loaded}
   <main>
-    <slot />
+    {@render children?.()}
   </main>
-</Transition>
+{/if}
+
+<footer class="bg-stone-900 text-gray-300 text-center p-5">
+  <p class="text-center text-gray-300">© 2025 Jaren Goldberg</p>
+</footer>

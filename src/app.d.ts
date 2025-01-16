@@ -7,6 +7,34 @@ declare global {
     // interface PageData {}
     // interface Platform {}
   }
+  interface ProjectOptions {
+    title: string;
+    src: string;
+    img: string;
+    url: string;
+    description: string;
+    tools: string;
+  }
+
+  interface HobbyOptions {
+    title: string;
+    description: string;
+    img: string;
+    date: string;
+  }
+
+  interface HobbyPageOptions {
+    title: string;
+    subtitle?: string;
+    description: string;
+    data: HobbyOptions[];
+  }
+
+  interface HobbyTextOptions {
+    title: string;
+    description: string;
+    date: string;
+  }
 }
 
 export {};

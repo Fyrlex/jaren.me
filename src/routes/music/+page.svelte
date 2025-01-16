@@ -1,48 +1,35 @@
 <script lang="ts">
-  import Meta from '../../components/meta.svelte';
+  import Metadata from '../../components/Metadata.svelte';
 
   import MUSIC_1 from '$lib/assets/MUSIC_1.jpg';
-  // import MUSIC_2 from "$lib/assets/MUSIC_2.jpg";
-  // import MUSIC_3 from "$lib/assets/MUSIC_3.jpg";
-  // import MUSIC_4 from "$lib/assets/MUSIC_4.jpg";
-  // import MUSIC_5 from "$lib/assets/MUSIC_5.jpg";
   import MUSIC_6 from '$lib/assets/MUSIC_6.jpg';
-  import Hobbies from '../../components/hobbies.svelte';
+  import HobbyPage from '../../components/HobbyPage.svelte';
+  import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
 
-  const musicImages: {
-    src: string;
-    title: string;
-    description: string;
-    date: string;
-  }[] = [
+  const musicImages: HobbyOptions[] = [
     {
       title: 'Richmond Music Hall',
       description: '',
-      src: MUSIC_1,
+      img: MUSIC_1 as unknown as string,
       date: 'July 14, 2023',
     },
     {
       title: 'Great Falls',
       description: '',
-      src: MUSIC_6,
+      img: MUSIC_6 as unknown as string,
       date: 'May 17, 2022',
     },
   ];
+
+  const title = 'music experience';
+  const description = "Member of rock band Clishae and Vinny Anthony's backing band.";
 </script>
 
 <svelte:head>
-  <Meta data={{ title: 'Music', url: 'music' }} />
+  <Metadata data={{ title: 'Music', url: 'music' }} />
 </svelte:head>
 
-<div class="h-screen bg-stone-900 text-center text-gray-300 font-extralight">
-  <h1 class="text-5xl lg:text-8xl text-center lg:p-8">music experience</h1>
-  <div class="container mx-auto">
-    <div class="m-5">
-      <h2 class="text-3xl lg:text-6xl text-cyan-500 m-2 mx-auto">Electric Bassist</h2>
-      <p class="text-xl lg:text-2xl w-[70vw] max-w-fit mb-4 mx-auto">
-        Member of rock band <a href="https://clishae.us" class="text-cyan-500 hover:text-cyan-400">Clishae</a>
-      </p>
-    </div>
-    <Hobbies data={musicImages} />
-  </div>
+<div in:fade={{ duration: 300 }} class="bg-stone-900 text-center text-gray-300 font-extralight">
+  <HobbyPage {title} {description} data={musicImages} />
 </div>
