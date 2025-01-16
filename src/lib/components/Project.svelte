@@ -1,5 +1,7 @@
 <script lang="ts">
-  let { description, img, src, title, tools, url }: ProjectOptions = $props();
+  import type { ProjectOptions } from '../typings/index.js';
+
+  let { description, title, tools, url }: ProjectOptions = $props();
 
   function openUrl(url: string) {
     window.open(url, '_blank', 'noopener,noreferrer');

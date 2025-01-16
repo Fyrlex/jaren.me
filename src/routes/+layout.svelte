@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { base } from '$app/paths';
-  import { fade } from 'svelte/transition';
-  import '../app.css';
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
+  import '../app.css';
 
   const pages: { name: string; url: string }[] = [
     { name: 'home', url: '' },

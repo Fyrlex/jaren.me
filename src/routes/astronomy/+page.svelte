@@ -1,15 +1,15 @@
 <script lang="ts">
+  import { fade } from 'svelte/transition';
+  import Hobbies from '../../lib/components/HobbyPage.svelte';
   import Metadata from '../../lib/components/Metadata.svelte';
 
+  import type { HobbyOptions } from '../../lib/typings/index.js';
+  import ASTRO_12P from '$lib/assets/ASTRO_12P.jpg';
   import ASTRO_EAGLE from '$lib/assets/ASTRO_EAGLE.jpg';
   import ASTRO_MOON from '$lib/assets/ASTRO_MOON.jpg';
-  import ASTRO_TRIFFID from '$lib/assets/ASTRO_TRIFFID.jpg';
-  import ASTRO_TRIANGULUM from '$lib/assets/ASTRO_TRIANGULUM.jpg';
   import ASTRO_ORION from '$lib/assets/ASTRO_ORION.jpg';
-  import ASTRO_12P from '$lib/assets/ASTRO_12P.jpg';
-
-  import Hobbies from '../../lib/components/HobbyPage.svelte';
-  import { fade } from 'svelte/transition';
+  import ASTRO_TRIANGULUM from '$lib/assets/ASTRO_TRIANGULUM.jpg';
+  import ASTRO_TRIFFID from '$lib/assets/ASTRO_TRIFFID.jpg';
 
   const astroImages: HobbyOptions[] = [
     {

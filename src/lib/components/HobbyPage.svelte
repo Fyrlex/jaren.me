@@ -1,5 +1,6 @@
 <script lang="ts">
   import HobbyText from './HobbyText.svelte';
+  import type { HobbyPageOptions } from '../typings/index.js';
 
   let { title, subtitle, description, data }: HobbyPageOptions = $props();
 </script>

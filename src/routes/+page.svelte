@@ -1,9 +1,9 @@
 <script>
+  import { fade } from 'svelte/transition';
   import Metadata from '../lib/components/Metadata.svelte';
   import GitHubIcon from '$lib/assets/github.png';
-  import LinkedinIcon from '$lib/assets/linkedin.png';
   import JarenCircle from '$lib/assets/jaren-circle.png';
-  import { fade } from 'svelte/transition';
+  import LinkedinIcon from '$lib/assets/linkedin.png';
 
   const GitHub = GitHubIcon;
   const LinkedIn = LinkedinIcon;

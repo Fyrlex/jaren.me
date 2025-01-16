@@ -1,4 +1,6 @@
 <script lang="ts">
+  import type { HobbyTextOptions } from '../typings/index.js';
+
   let { date, description, title }: HobbyTextOptions = $props();
 </script>
 

@@ -1,11 +1,11 @@
 <script lang="ts">
+  import { fade } from 'svelte/transition';
+  import HobbyPage from '../../lib/components/HobbyPage.svelte';
   import Metadata from '../../lib/components/Metadata.svelte';
 
+  import type { HobbyOptions } from '../../lib/typings/index.js';
   import MUSIC_1 from '$lib/assets/MUSIC_1.jpg';
   import MUSIC_6 from '$lib/assets/MUSIC_6.jpg';
-  import HobbyPage from '../../lib/components/HobbyPage.svelte';
-  import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
 
   const musicImages: HobbyOptions[] = [
     {
