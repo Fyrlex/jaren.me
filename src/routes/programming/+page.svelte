@@ -1,10 +1,9 @@
 <script lang="ts">
-  import Metadata from '../../components/Metadata.svelte';
-  import Projects from '../../components/Project.svelte';
+  import Metadata from '../../lib/components/Metadata.svelte';
   import VinnyAnthony from '$lib/assets/vinny-anthony-icon.png';
   import CountBot from '$lib/assets/countbot.png';
   import LuyxLLC from '$lib/assets/luyx-llc.png';
-  import Project from '../../components/Project.svelte';
+  import Project from '../../lib/components/Project.svelte';
   import { fade } from 'svelte/transition';
 
   const projects: ProjectOptions[] = [

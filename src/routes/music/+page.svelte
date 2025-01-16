@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Metadata from '../../components/Metadata.svelte';
+  import Metadata from '../../lib/components/Metadata.svelte';
 
   import MUSIC_1 from '$lib/assets/MUSIC_1.jpg';
   import MUSIC_6 from '$lib/assets/MUSIC_6.jpg';
-  import HobbyPage from '../../components/HobbyPage.svelte';
+  import HobbyPage from '../../lib/components/HobbyPage.svelte';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
 

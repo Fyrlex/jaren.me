@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Metadata from '../../components/Metadata.svelte';
+  import Metadata from '../../lib/components/Metadata.svelte';
 
   import ASTRO_EAGLE from '$lib/assets/ASTRO_EAGLE.jpg';
   import ASTRO_MOON from '$lib/assets/ASTRO_MOON.jpg';
@@ -8,9 +8,8 @@
   import ASTRO_ORION from '$lib/assets/ASTRO_ORION.jpg';
   import ASTRO_12P from '$lib/assets/ASTRO_12P.jpg';
 
-  import Hobbies from '../../components/HobbyPage.svelte';
+  import Hobbies from '../../lib/components/HobbyPage.svelte';
   import { fade } from 'svelte/transition';
-  import { onMount } from 'svelte';
 
   const astroImages: HobbyOptions[] = [
     {
