@@ -21,10 +21,10 @@
 </script>
 
 <nav
-  class="flex flex-row justify-around bg-stone-900 font-extralight text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl items-center my-5 mx-5"
+  class="mx-5 my-5 flex flex-row items-center justify-around bg-stone-900 text-center text-xl font-extralight sm:text-2xl md:text-3xl lg:text-4xl"
 >
   {#each pages as { name, url }}
-    <a class="text-cyan-500 hover:text-cyan-400 duration-300" href="{base}/{url}">{name}</a>
+    <a class="text-cyan-500 duration-300 hover:text-cyan-400" href="{base}/{url}">{name}</a>
   {/each}
 </nav>
 
@@ -34,6 +34,6 @@
   </main>
 {/if}
 
-<footer class="bg-stone-900 text-gray-300 text-center p-5">
+<footer class="bg-stone-900 p-5 text-center text-gray-300">
   <p class="text-center text-gray-300">© 2025 Jaren Goldberg</p>
 </footer>

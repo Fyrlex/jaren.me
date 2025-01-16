@@ -4,32 +4,34 @@
   let { title, subtitle, description, data }: HobbyPageOptions = $props();
 </script>
 
-<div class="flex flex-col items-center text-center mx-10">
-  <h1 class="text-5xl lg:text-8xl text-center lg:p-8">{title}</h1>
-  <h2 class="text-3xl lg:text-5xl text-cyan-500 m-2">{subtitle}</h2>
-  <p class="text-xl lg:text-2xl w-[70vw] mb-4">{description}</p>
+<div class="mx-10 flex flex-col items-center text-center">
+  <h1 class="text-center text-5xl lg:p-8 lg:text-8xl">{title}</h1>
+  <h2 class="m-2 text-3xl text-cyan-500 lg:text-5xl">{subtitle}</h2>
+  <p class="mb-4 w-[70vw] text-xl lg:text-2xl">{description}</p>
 
   <div class="flex flex-col space-y-10">
     {#each data as { date, description, img, title }, i}
-      <div class="lg:flex lg:w-[50vw] mx-auto bg-stone-800 rounded-md border border-stone-600 shadow-lg duration-700">
+      <div
+        class="mx-auto rounded-md border border-stone-600 bg-stone-800 shadow-lg duration-700 lg:flex lg:w-[50vw]"
+      >
         {#if i % 2 === 0}
           <img
             src={img}
             alt={title}
-            class="rounded-t-md border-b lg:border-b-0 lg:rounded-none lg:rounded-l-md lg:border-r border-stone-600 lg:w-2/3"
+            class="rounded-t-md border-b border-stone-600 lg:w-2/3 lg:rounded-none lg:rounded-l-md lg:border-b-0 lg:border-r"
           />
           <HobbyText {title} {description} {date} />
         {:else}
           <img
             src={img}
             alt={title}
-            class="lg:hidden rounded-t-md border-b lg:border-b-0 lg:rounded-none lg:rounded-r-md lg:border-l border-stone-600 lg:w-2/3"
+            class="rounded-t-md border-b border-stone-600 lg:hidden lg:w-2/3 lg:rounded-none lg:rounded-r-md lg:border-b-0 lg:border-l"
           />
           <HobbyText {title} {description} {date} />
           <img
             src={img}
             alt={title}
-            class="hidden lg:flex rounded-t-md border-b lg:border-b-0 lg:rounded-none lg:rounded-r-md lg:border-l border-stone-600 lg:w-2/3"
+            class="hidden rounded-t-md border-b border-stone-600 lg:flex lg:w-2/3 lg:rounded-none lg:rounded-r-md lg:border-b-0 lg:border-l"
           />
         {/if}
       </div>

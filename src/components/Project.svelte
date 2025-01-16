@@ -6,9 +6,9 @@
   }
 </script>
 
-<button class="bg-stone-800 flex flex-row w-full p-3 rounded-md" onclick={() => openUrl(url)}>
-  <div class="text-left flex flex-col space-y-1">
-    <h3 class="font-semibold text-4xl text-cyan-500">{title}</h3>
+<button class="flex w-full flex-row rounded-md bg-stone-800 p-3" onclick={() => openUrl(url)}>
+  <div class="flex flex-col space-y-1 text-left">
+    <h3 class="text-4xl font-semibold text-cyan-500">{title}</h3>
     <p>{description}</p>
     <p>Tools: {tools}</p>
   </div>

@@ -40,11 +40,11 @@
   <Metadata data={{ title: 'Programming', url: 'programming' }} />
 </svelte:head>
 
-<div in:fade={{ duration: 300 }} class="bg-stone-900 text-gray-300 font-extralight">
-  <h1 class="text-5xl lg:text-8xl text-center lg:p-8">programming experience</h1>
-  <div class="flex flex-col items-center justify-center p-4 space-y-10">
+<div in:fade={{ duration: 300 }} class="bg-stone-900 font-extralight text-gray-300">
+  <h1 class="text-center text-5xl lg:p-8 lg:text-8xl">programming experience</h1>
+  <div class="flex flex-col items-center justify-center space-y-10 p-4">
     <img class="my-3 w-[70vw] lg:w-[40vw]" alt="Skill Icons" width="500" src={'/skills.svg'} />
-    <h2 class="text-3xl lg:text-6xl lg:p-8">projects</h2>
+    <h2 class="text-3xl lg:p-8 lg:text-6xl">projects</h2>
     <div class="flex flex-col space-y-10">
       {#each projects as project}
         <Project {...project} />

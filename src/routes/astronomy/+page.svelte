@@ -52,13 +52,14 @@
   ];
 
   const title = 'astronomy experience';
-  const description = 'Member of the Northern Virginia Astronomy Club and Astronomy Club of Virginia Tech';
+  const description =
+    'Member of the Northern Virginia Astronomy Club and Astronomy Club of Virginia Tech';
 </script>
 
 <svelte:head>
   <Metadata data={{ title: 'Astronomy', url: 'astronomy' }} />
 </svelte:head>
 
-<div in:fade={{ duration: 300 }} class="bg-stone-900 text-center text-gray-300 font-extralight">
+<div in:fade={{ duration: 300 }} class="bg-stone-900 text-center font-extralight text-gray-300">
   <Hobbies {title} {description} data={astroImages} />
 </div>

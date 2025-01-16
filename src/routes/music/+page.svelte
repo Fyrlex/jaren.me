@@ -30,6 +30,6 @@
   <Metadata data={{ title: 'Music', url: 'music' }} />
 </svelte:head>
 
-<div in:fade={{ duration: 300 }} class="bg-stone-900 text-center text-gray-300 font-extralight">
+<div in:fade={{ duration: 300 }} class="bg-stone-900 text-center font-extralight text-gray-300">
   <HobbyPage {title} {description} data={musicImages} />
 </div>
