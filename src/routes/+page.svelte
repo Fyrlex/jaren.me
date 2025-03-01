@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <Metadata data={{ title: 'Home', url: '' }} />
+  <Metadata url="/" />
 </svelte:head>
 
 <div class="mx-5 flex flex-col items-center bg-stone-900 text-center text-gray-300">

@@ -56,7 +56,7 @@
 </script>
 
 <svelte:head>
-  <Metadata data={{ title: 'Astronomy', url: 'astronomy' }} />
+  <Metadata url="astronomy" />
 </svelte:head>
 
 <div in:fade={{ duration: 300 }} class="bg-stone-900 text-center font-extralight text-gray-300">

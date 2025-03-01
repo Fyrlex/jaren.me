@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { base } from '$app/paths';
   import '../app.css';
 
@@ -11,12 +10,6 @@
   ];
 
   let { children } = $props();
-
-  let loaded = $state(false);
-
-  onMount(() => {
-    loaded = true;
-  });
 </script>
 
 <nav
@@ -27,12 +20,10 @@
   {/each}
 </nav>
 
-{#if loaded}
-  <main>
-    {@render children?.()}
-  </main>
-{/if}
+<main>
+  {@render children()}
+</main>
 
 <footer class="bg-stone-900 p-5 text-center text-gray-300">
-  <p class="text-center text-gray-300">© 2025 Jaren Goldberg</p>
+  <p>© 2025 Jaren Goldberg</p>
 </footer>

@@ -26,3 +26,7 @@ export interface HobbyTextOptions {
   description: string;
   date: string;
 }
+
+export interface MetadataOptions {
+  url: string;
+}
