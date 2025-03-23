@@ -26,7 +26,28 @@
     Computer Science is my thing, but I also enjoy playing music and photographing the night sky.
   </p>
   <br />
-  <p>I am an active learner at school and on my own as new technologies and pratices excite me.</p>
+  <p class="max-w-3xl text-xl">
+    I am a Sophomore in Computer Science at <a
+      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
+      href="https://www.vt.edu/"
+      target="_blank">Virginia Tech</a
+    >
+    with interests in software engineering, cloud architecture, and networking. During my time as a student,
+    I have proven my ability to learn and apply myself by achieving Dean's List with Distinction. Additionally,
+    I have gained valuable work experience by working as a Network Aide Intern at
+    <a
+      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
+      href="https://www.fairfaxwater.org/"
+      target="_blank">Fairfax Water</a
+    >
+    and as a founder of a software engineering company,
+    <a
+      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
+      href="http://luyx.dev/"
+      target="_blank">Luyx LLC</a
+    >. I am currently seeking a summer opportunity to further develop my skills to move myself
+    forward in the ever-growing field of technology.
+  </p>
   <div class="my-10 flex flex-row items-center justify-center space-x-5">
     <a
       href="https://github.com/Fyrlex"
