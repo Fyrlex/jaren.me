@@ -9,12 +9,5 @@
 
   <body data-sveltekit-preload-data="hover" class="bg-slate-200">
     <div style="display: contents">%sveltekit.body%</div>
-
-    <script>
-      const theme = new URL(window.location).searchParams.get('theme');
-
-      document.documentElement.classList.remove('light', 'dark');
-      document.documentElement.classList.add(theme || 'light');
-    </script>
   </body>
 </html>
