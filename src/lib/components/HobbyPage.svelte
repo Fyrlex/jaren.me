@@ -5,7 +5,7 @@
   let { title, subtitle, description, data }: HobbyPageOptions = $props();
 </script>
 
-<div class="mx-10 flex flex-col items-center text-center">
+<div class="container mx-auto flex flex-col items-center p-5 text-center">
   <h1 class="text-center text-5xl lg:p-8 lg:text-8xl">{title}</h1>
   <h2 class="m-2 text-3xl text-cyan-500 lg:text-5xl">{subtitle}</h2>
   <p class="mb-4 w-[70vw] text-xl lg:text-2xl">{description}</p>
@@ -19,7 +19,7 @@
           <img
             src={img}
             alt={title}
-            class="rounded-t-md border-b border-stone-600 lg:w-2/3 lg:rounded-none lg:rounded-l-md lg:border-b-0 lg:border-r"
+            class="rounded-t-md border-b border-stone-600 lg:w-2/3 lg:rounded-none lg:rounded-l-md lg:border-r lg:border-b-0"
           />
           <HobbyText {title} {description} {date} />
         {:else}

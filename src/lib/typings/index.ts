@@ -9,7 +9,7 @@ export interface ProjectOptions {
 
 export interface HobbyOptions {
   title: string;
-  description: string;
+  description?: string;
   img: string;
   date: string;
 }
@@ -23,7 +23,7 @@ export interface HobbyPageOptions {
 
 export interface HobbyTextOptions {
   title: string;
-  description: string;
+  description?: string;
   date: string;
 }
 

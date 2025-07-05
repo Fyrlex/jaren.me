@@ -1,11 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  background: #1c1917 !important;
-}
-
-html {
-  scrollbar-gutter: stable;
-}
+@import 'tailwindcss';

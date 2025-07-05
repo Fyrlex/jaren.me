@@ -18,16 +18,16 @@
     },
     {
       title: 'CountBot',
-      description: 'A Discord bot that is used by 150K+ users in over 12,000 servers',
+      description: 'A Discord bot that is used by 200K+ users in over 14,000 servers',
       img: CountBot as unknown as string,
       src: 'https://github.com/Count-Bot/',
       url: 'https://count.bot',
-      tools: 'mongodb, typescript, rust, linux, cloudflare',
+      tools: 'svelte, mongodb, typescript, linux, cloudflare',
     },
     {
       title: 'Luyx LLC',
       description:
-        'A software development company that I co-founded that values learning, growth, and modern practices',
+        'A Software Solutions company that I co-founded that values learning, growth, and best practices',
       img: LuyxLLC as unknown as string,
       src: 'https://github.com/LuyxLLC',
       url: 'https://luyx.dev',
@@ -40,8 +40,15 @@
   <Metadata url="programming" />
 </svelte:head>
 
-<div in:fade={{ duration: 300 }} class="bg-stone-900 font-extralight text-gray-300">
+<div
+  in:fade={{ duration: 300 }}
+  class="flex flex-col items-center bg-stone-900 text-center font-extralight text-gray-300"
+>
   <h1 class="text-center text-5xl lg:p-8 lg:text-8xl">programming experience</h1>
+  <p class="mb-4 w-[70vw] text-xl lg:text-2xl">
+    As a passionate programmer, I have worked on various projects that showcase my skills and
+    dedication to the craft.
+  </p>
   <div class="flex flex-col items-center justify-center space-y-10 p-4">
     <img class="my-3 w-[70vw] lg:w-[40vw]" alt="Skill Icons" width="500" src={'/skills.svg'} />
     <h2 class="text-3xl lg:p-8 lg:text-6xl">projects</h2>
