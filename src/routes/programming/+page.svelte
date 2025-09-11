@@ -50,7 +50,12 @@
     dedication to the craft.
   </p>
   <div class="flex flex-col items-center justify-center space-y-10 p-4">
-    <img class="my-3 w-[70vw] lg:w-[40vw]" alt="Skill Icons" width="500" src={'/skills.svg'} />
+    <img
+      class="my-3 w-[70vw] select-none lg:w-[40vw]"
+      alt="Skill Icons"
+      width="500"
+      src={'/skills.svg'}
+    />
     <h2 class="text-3xl lg:p-8 lg:text-6xl">projects</h2>
     <div class="flex flex-col space-y-10">
       {#each projects as project}
