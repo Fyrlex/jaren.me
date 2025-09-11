@@ -63,7 +63,7 @@
   >
     <div class="flex flex-col space-y-1 text-left">
       <h3 class="text-3xl font-semibold text-cyan-500">Resume</h3>
-      <p>Last Updated: 7/5/2025</p>
+      <p>Last Updated: 9/10/2025</p>
     </div>
   </a>
   <div class="my-10 flex flex-row items-center justify-center space-x-5">
