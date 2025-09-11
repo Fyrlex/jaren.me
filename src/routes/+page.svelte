@@ -46,9 +46,14 @@
       class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
       href="http://luyx.dev/"
       target="_blank">Luyx LLC</a
-    >. I am currently seeking a summer opportunity to further develop my skills to move myself
-    forward in the ever-growing field of technology.
+    >.
   </p>
+  <a href="https://wakatime.com/@1f71c946-d1fb-450a-8092-e338a8012234"
+    ><img
+      src="https://wakatime.com/badge/user/1f71c946-d1fb-450a-8092-e338a8012234.svg?color=00b8db"
+      alt="Total time coded since Jun 16 2022"
+    /></a
+  >
   <a
     class="min-w-xs cursor-pointer rounded-md bg-stone-800 p-3"
     href="/resume.pdf"
