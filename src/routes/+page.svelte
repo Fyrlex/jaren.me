@@ -27,7 +27,7 @@
   </p>
   <hr class="w-2/3 border-slate-50" />
   <p class="max-w-3xl text-xl">
-    I am a Sophomore in Computer Science at <a
+    I am a Junior in Computer Science at <a
       class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
       href="https://www.vt.edu/"
       target="_blank">Virginia Tech</a
