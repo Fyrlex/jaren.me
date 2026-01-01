@@ -23,25 +23,24 @@
   />
   <h1 class="text-6xl font-semibold sm:text-7xl">Hey, I&apos;m Jaren</h1>
   <p class="text-xl sm:text-2xl">
-    Computer Science is my thing, but I also enjoy playing music and photographing the night sky.
+    Skilled programmer but also <a
+      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
+      href={'/music'}>musician</a
+    >
+    and
+    <a class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400" href={'/astronomy'}
+      >photographer</a
+    > of the night sky.
   </p>
   <hr class="w-2/3 border-slate-50" />
   <p class="max-w-3xl text-xl">
-    I am a Junior in Computer Science at <a
+    Pursuing Computer Science at <a
       class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
       href="https://www.vt.edu/"
       target="_blank">Virginia Tech</a
     >
-    with interests in software engineering, cloud architecture, and server administration. During my
-    time as a student, I have proven my ability to learn and apply myself by achieving Dean's List with
-    Distinction. Additionally, I have gained valuable work experience by working as a Network Aide Intern
-    at
-    <a
-      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
-      href="https://www.fairfaxwater.org/"
-      target="_blank">Fairfax Water</a
-    >
-    and as a founder of a Software Solutions company,
+    with a Minor in Cybersecurity and Mathematics with interests in software engineering, cloud architecture,
+    and server administration. I also founded a company for my work,
     <a
       class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
       href="http://luyx.dev/"
@@ -55,7 +54,7 @@
     /></a
   >
   <a
-    class="min-w-xs cursor-pointer rounded-md bg-stone-800 p-3"
+    class="min-w-xs rounded-md bg-stone-800 p-3"
     href="/JarenGoldberg.pdf"
     target="_blank"
     rel="noreferrer noopener"

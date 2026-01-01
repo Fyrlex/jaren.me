@@ -2,13 +2,12 @@
   import HobbyText from './HobbyText.svelte';
   import type { HobbyPageOptions } from '../typings/index.js';
 
-  let { title, subtitle, description, data }: HobbyPageOptions = $props();
+  let { title, description, data }: HobbyPageOptions = $props();
 </script>
 
 <div class="container mx-auto flex flex-col items-center p-5 text-center">
   <h1 class="text-center text-5xl lg:p-8 lg:text-8xl">{title}</h1>
-  <h2 class="m-2 text-3xl text-cyan-500 lg:text-5xl">{subtitle}</h2>
-  <p class="mb-4 w-[70vw] text-xl lg:text-2xl">{description}</p>
+  <p class="my-4 w-[70vw] text-xl lg:text-2xl">{description}</p>
 
   <div class="flex flex-col space-y-10">
     {#each data as { date, description, img, title }, i}
