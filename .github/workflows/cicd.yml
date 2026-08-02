@@ -30,7 +30,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/jaren.me'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 

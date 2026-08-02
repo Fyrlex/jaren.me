@@ -17,7 +17,7 @@ const config = {
         return;
       },
     },
-    adapter: adapter(), // default options are shown. On some platforms
+    adapter: adapter(),
     paths: {
       // @ts-expect-error temporary fix for
       base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
