@@ -20,8 +20,8 @@ const config = {
     adapter: adapter(), // default options are shown. On some platforms
     paths: {
       // @ts-ignore
-      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-    }
+      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+    },
   },
 };
 
