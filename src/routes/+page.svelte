@@ -1,4 +1,5 @@
 <script>
+  import { asset, resolve } from '$app/paths';
   import { fade } from 'svelte/transition';
   import Metadata from '../lib/components/Metadata.svelte';
   import GitHubIcon from '$lib/assets/github.png';
@@ -25,11 +26,12 @@
   <p class="text-xl sm:text-2xl">
     Skilled programmer but also <a
       class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
-      href={'/music'}>musician</a
+      href={resolve('/music')}>musician</a
     >
     and
-    <a class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400" href={'/astronomy'}
-      >photographer</a
+    <a
+      class="font-semibold text-cyan-500 duration-300 hover:text-cyan-400"
+      href={resolve('/astronomy')}>photographer</a
     > of the night sky.
   </p>
   <hr class="w-2/3 border-slate-50" />
@@ -55,7 +57,7 @@
   >
   <a
     class="min-w-xs rounded-md bg-stone-800 p-3"
-    href="/JarenGoldberg.pdf"
+    href={asset('/JarenGoldberg.pdf')}
     target="_blank"
     rel="noreferrer noopener"
     title="Click to view my resume"

@@ -6,6 +6,7 @@
   import CountBot from '$lib/assets/countbot.png';
   import LuyxLLC from '$lib/assets/luyx-llc.png';
   import VinnyAnthony from '$lib/assets/vinny-anthony-icon.png';
+  import { asset } from '$app/paths';
 
   const projects: ProjectOptions[] = [
     {
@@ -63,11 +64,11 @@
       class="my-3 w-[70vw] select-none lg:w-[40vw]"
       alt="Skill Icons"
       width="500"
-      src={'/skills.svg'}
+      src={asset('/skills.svg')}
     />
     <h2 class="text-3xl lg:p-8 lg:text-6xl">projects</h2>
     <div class="flex flex-col space-y-10">
-      {#each projects as project}
+      {#each projects as project (project.title)}
         <Project {...project} />
       {/each}
     </div>

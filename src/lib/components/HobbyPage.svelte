@@ -10,7 +10,7 @@
   <p class="my-4 w-[70vw] text-xl lg:text-2xl">{description}</p>
 
   <div class="flex flex-col space-y-10">
-    {#each data as { date, description, img, title }, i}
+    {#each data as { date, description, img, title }, i (i)}
       <div
         class="mx-auto rounded-md border border-stone-600 bg-stone-800 shadow-lg duration-700 lg:flex lg:w-[50vw]"
       >
